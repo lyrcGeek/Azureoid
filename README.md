@@ -1,7 +1,7 @@
 Azureoid
 ========
 
-Azureoid is a management client for Android. It's an alternative to the management portal that renders better on mobile android devices. 
+Azureoid is a native Android management client for Windows Azure. It's an alternative to the management portal that renders better on mobile android devices. 
 
 *Requirements*
 * Xamarin Studio for Android
