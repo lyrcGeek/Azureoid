@@ -64,7 +64,10 @@ namespace Azureoid
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int myButton = 2131099648;
+			public const int AzureCall = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int textView1 = 2131099649;
 			
 			static Id()
 			{
@@ -98,11 +101,17 @@ namespace Azureoid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f040003
+			public const int AzureCallButtonText = 2130968579;
+			
 			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			public const int Hello = 2130968577;
 			
 			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			public const int app_name = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int hereGoesResponseFromAzure = 2130968578;
 			
 			static String()
 			{

@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">Azureoid</string>
+	<string name="Hello">Test Azure Call</string>
+	<string name="hereGoesResponseFromAzure">Here goes response from Azure</string>
+	<string name="AzureCallButtonText">Test Azure Call</string>
 </resources>
