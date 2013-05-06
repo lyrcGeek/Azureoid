@@ -4,4 +4,5 @@
 	<string name="Hello">Test Azure Call</string>
 	<string name="hereGoesResponseFromAzure">Here goes response from Azure</string>
 	<string name="AzureCallButtonText">Test Azure Call</string>
+	<string name="mainScreenTitle">Azure Subscription</string>
 </resources>
