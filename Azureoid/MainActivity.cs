@@ -35,9 +35,7 @@ namespace Azureoid
 				//var servicesAsStrings = services.StorageService.Select (l => l.ServiceName).ToList();
 
 				var storageList = FindViewById<ListView>(Resource.Id.StorageAccountList);
-				storageList.Adapter = new HostedServicesListAdapter(this, services);
-
-				//var adapter = new HostedServicesListAdapter(this, services);
+				storageList.Adapter = new StorageServiceListAdapter(this, services);
 
 				//storageList.Adapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, servicesAsStrings);
 				//var label = FindViewById<TextView>(Resource.Id.textView1);
