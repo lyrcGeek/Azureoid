@@ -53,6 +53,8 @@
     <Compile Include="AzureHelper.cs" />
     <Compile Include="DomainObjects\StorageServices.cs" />
     <Compile Include="DomainObjects\HostedServices.cs" />
+    <Compile Include="DomainObjects\HostedServicesListAdapter.cs" />
+    <Compile Include="JavaConversions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -62,6 +64,7 @@
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\HostedServiceListItem.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

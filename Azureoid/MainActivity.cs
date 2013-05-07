@@ -31,14 +31,15 @@ namespace Azureoid
 			
 				var certificate = AssetManagement.GetCertificate(xdoc);
 				var services = AzureHelper.GetStorageAccounts(certificate, id);
-				var servicesAsStrings = services.StorageService.Select (l => l.ServiceName).ToList();
 
-				//var progressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
-				//progressBar.Visibility = ViewStates.Gone;
+				//var servicesAsStrings = services.StorageService.Select (l => l.ServiceName).ToList();
 
 				var storageList = FindViewById<ListView>(Resource.Id.StorageAccountList);
-				storageList.Adapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, servicesAsStrings);
+				storageList.Adapter = new HostedServicesListAdapter(this, services);
 
+				//var adapter = new HostedServicesListAdapter(this, services);
+
+				//storageList.Adapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, servicesAsStrings);
 				//var label = FindViewById<TextView>(Resource.Id.textView1);
 				//label.Text = serviceList.StorageService[0];
 			};

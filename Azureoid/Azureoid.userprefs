@@ -1,19 +1,20 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AssetManagement.cs">
+﻿<Properties GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DomainObjects\HostedServicesListAdapter.cs">
     <Files>
-      <File FileName="AssetManagement.cs" Line="16" Column="24" />
-      <File FileName="MainActivity.cs" Line="33" Column="69" />
-      <File FileName="AzureHelper.cs" Line="41" Column="11" />
+      <File FileName="MainActivity.cs" Line="38" Column="5" />
+      <File FileName="DomainObjects\StorageServices.cs" Line="57" Column="3" />
+      <File FileName="DomainObjects\HostedServicesListAdapter.cs" Line="30" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Azureoid" expanded="True" selected="True">
-            <Node name="Assets" expanded="True" />
+          <Node name="Azureoid" expanded="True">
+            <Node name="DomainObjects" expanded="True">
+              <Node name="HostedServicesListAdapter.cs" selected="True" />
+            </Node>
             <Node name="Resources" expanded="True">
               <Node name="layout" expanded="True" />
-              <Node name="values" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -24,5 +25,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Azureoid MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" AndroidDeviceId-Debug="emulator-5554" />
+  <MonoDevelop.Ide.ItemProperties.Azureoid MonoForAntroid.PreferredDevice="4in WVGA (Nexus S)" MonoForAntroid.PreferredTheme="Theme.Holo.Light.Dialog.NoActionBar" AndroidDeviceId-Debug="emulator-5554" />
 </Properties>
