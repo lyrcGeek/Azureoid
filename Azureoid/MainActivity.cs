@@ -20,7 +20,9 @@ namespace Azureoid
 			
 			// Set our view from the "main" layout resource
 			SetContentView(Resource.Layout.Main);
-			
+
+			//TODO: Stop using anonymous delegates, this is not javascipt :P
+			//TODO: Find a pattern to distribute all these events in an orderly way!
 			var button = FindViewById<Button>(Resource.Id.AzureCall);
 			button.Click += (sender, args) =>
 			{
@@ -37,9 +39,16 @@ namespace Azureoid
 				var storageList = FindViewById<ListView>(Resource.Id.StorageAccountList);
 				storageList.Adapter = new StorageServiceListAdapter(this, services);
 
-				//storageList.Adapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, servicesAsStrings);
-				//var label = FindViewById<TextView>(Resource.Id.textView1);
-				//label.Text = serviceList.StorageService[0];
+				storageList.ItemClick += (object listSender, AdapterView.ItemClickEventArgs e) => {
+					var list = listSender as ListView;
+					var item = services.StorageService[e.Position];
+
+					var storageAccount = AzureHelper.GetStorageAccountKeys(certificate, id, item.ServiceName) as Azureoid.DomainObjects.StorageKeys.StorageService;
+
+					Android.Widget.Toast.MakeText(this, storageAccount.StorageServiceKeys.Primary, 
+					                              Android.Widget.ToastLength.Short).Show();
+				};
+
 			};
 		}
 	}

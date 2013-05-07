@@ -1,28 +1,27 @@
 ﻿<Properties GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DomainObjects\HostedServicesListAdapter.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Common\ExpandoObjectHelper.cs">
     <Files>
-      <File FileName="MainActivity.cs" Line="38" Column="5" />
-      <File FileName="DomainObjects\StorageServices.cs" Line="57" Column="3" />
-      <File FileName="DomainObjects\HostedServicesListAdapter.cs" Line="30" Column="16" />
+      <File FileName="MainActivity.cs" Line="46" Column="1" />
+      <File FileName="AzureHelper.cs" Line="147" Column="1" />
+      <File FileName="Common\ExpandoObjectHelper.cs" Line="57" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Azureoid" expanded="True">
-            <Node name="DomainObjects" expanded="True">
-              <Node name="HostedServicesListAdapter.cs" selected="True" />
-            </Node>
-            <Node name="Resources" expanded="True">
-              <Node name="layout" expanded="True" />
-            </Node>
+          <Node name="Azureoid" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+            <Node name="Common" expanded="True" />
+            <Node name="DomainObjects" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Websites\Azureoid\Azureoid\AzureHelper.cs" line="147" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Azureoid MonoForAntroid.PreferredDevice="4in WVGA (Nexus S)" MonoForAntroid.PreferredTheme="Theme.Holo.Light.Dialog.NoActionBar" AndroidDeviceId-Debug="emulator-5554" />
