@@ -1,18 +1,15 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Common\ExpandoObjectHelper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AzureHelper.cs">
     <Files>
-      <File FileName="MainActivity.cs" Line="46" Column="1" />
-      <File FileName="AzureHelper.cs" Line="147" Column="1" />
-      <File FileName="Common\ExpandoObjectHelper.cs" Line="57" Column="7" />
+      <File FileName="MainActivity.cs" Line="17" Column="50" />
+      <File FileName="AzureHelper.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Azureoid" expanded="True" selected="True">
-            <Node name="References" expanded="True" />
-            <Node name="Common" expanded="True" />
-            <Node name="DomainObjects" expanded="True" />
+          <Node name="Azureoid" expanded="True">
+            <Node name="AzureHelper.cs" selected="True" />
           </Node>
         </State>
       </Pad>

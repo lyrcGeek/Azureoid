@@ -14,8 +14,10 @@ namespace Azureoid
         {
 			var profile = xdoc.Descendants("PublishProfile").Single();
 			var managementCertbase64String = profile.Attribute("ManagementCertificate").Value;
-
-			return new X509Certificate2(Convert.FromBase64String(managementCertbase64String));
+            Certificate = new X509Certificate2(Convert.FromBase64String(managementCertbase64String));
+            return Certificate;
         }
+
+        public static X509Certificate2 Certificate { get; set; }
     }
 }
