@@ -25,7 +25,7 @@ namespace Azureoid
 		/// <param name="certificate">Certificate.</param>
 		/// <param name="subscriptionId">Subscription identifier.</param>
 		/// <param name="requestUri">Request URI.</param>
-		public static string PerformHttpCall(X509Certificate2 certificate, string subscriptionId, Uri requestUri)
+		public static string PerformHttpCall(string subscriptionId, Uri requestUri)
 		{
 			// Request and response variables.
 			HttpWebRequest httpWebRequest = null;
@@ -37,12 +37,12 @@ namespace Azureoid
 
 			// The thumbprint for the certificate. This certificate would have been
 			// previously added as a management certificate within the Windows Azure management portal.
-			Console.WriteLine("Using certificate with thumbprint: " + certificate.Thumbprint);
+            Console.WriteLine("Using certificate with thumbprint: " + AssetManagement.Certificate.Thumbprint);
 
 			httpWebRequest = (HttpWebRequest)WebRequest.Create(requestUri);
 			
 			// Add the certificate to the request.
-			httpWebRequest.ClientCertificates.Add(certificate);
+            httpWebRequest.ClientCertificates.Add(AssetManagement.Certificate);
 			
 			// Specify the version information in the header.
 			httpWebRequest.Headers.Add("x-ms-version", "2013-03-01");
@@ -79,9 +79,8 @@ namespace Azureoid
 		/// Gets the hosted services on the Azure Subscription
 		/// </summary>
 		/// <returns>The hosted services.</returns>
-		/// <param name="certificate">Certificate.</param>
 		/// <param name="subscriptionId">Subscription identifier.</param>
-		public static HostedServices GetHostedServices(X509Certificate2 certificate, string subscriptionId)
+		public static HostedServices GetHostedServices(string subscriptionId)
         {
 			HostedServices services;
 
@@ -91,7 +90,7 @@ namespace Azureoid
                                  + "/services/hostedservices");
 
 			//Receive response from server
-			var xmlResponse = PerformHttpCall(certificate, subscriptionId, requestUri);
+			var xmlResponse = PerformHttpCall(subscriptionId, requestUri);
 			
 			//Serialize and return response
 			var serializer = new XmlSerializer(typeof(HostedServices));
@@ -106,9 +105,8 @@ namespace Azureoid
 		/// Gets the storage account list on the Azure Subscription
 		/// </summary>
 		/// <returns>The hosted services.</returns>
-		/// <param name="certificate">Certificate.</param>
 		/// <param name="subscriptionId">Subscription identifier.</param>
-		public static StorageServices GetStorageAccounts(X509Certificate2 certificate, string subscriptionId)
+		public static StorageServices GetStorageAccounts(string subscriptionId)
 		{
 			StorageServices services;
 
@@ -118,7 +116,7 @@ namespace Azureoid
 			                         + "/services/storageservices");
 
 			//Query the Azure Server
-			var xmlResponse = PerformHttpCall(certificate, subscriptionId, requestUri);
+			var xmlResponse = PerformHttpCall(subscriptionId, requestUri);
 
 			//Serialize and return response
 			var serializer = new XmlSerializer(typeof(StorageServices));
@@ -132,9 +130,8 @@ namespace Azureoid
 		/// <summary>
 		/// Gets information for a specific storage account (details)
 		/// </summary>
-		/// <param name="certificate">Certificate.</param>
 		/// <param name="subscriptionId">Subscription identifier.</param>
-		public static StorageService GetStorageAccountDetail(X509Certificate2 certificate, string subscriptionId, string storageName)
+		public static StorageService GetStorageAccountDetail(string subscriptionId, string storageName)
 		{
 			StorageService service;
 
@@ -144,7 +141,7 @@ namespace Azureoid
 			                         + storageName);
 
 			//Query the Azure Server
-			var httpResponse = PerformHttpCall(certificate, subscriptionId, requestUri);
+			var httpResponse = PerformHttpCall(subscriptionId, requestUri);
 			var serializer = new XmlSerializer(typeof(StorageService));
 			using (var memStream = new MemoryStream(Encoding.UTF8.GetBytes(httpResponse)))
 			{
@@ -159,9 +156,8 @@ namespace Azureoid
 		/// <summary>
 		/// Gets access keys for a storage account (details)
 		/// </summary>
-		/// <param name="certificate">Certificate.</param>
 		/// <param name="subscriptionId">Subscription identifier.</param>
-		public static dynamic GetStorageAccountKeys(X509Certificate2 certificate, string subscriptionId, string storageName)
+		public static dynamic GetStorageAccountKeys(string subscriptionId, string storageName)
 		{
 			Azureoid.DomainObjects.StorageKeys.StorageService service;
 
@@ -173,14 +169,14 @@ namespace Azureoid
 			                         + "/keys");
 			
 			//Query the Azure Server
-			var httpResponse = PerformHttpCall(certificate, subscriptionId, requestUri);
-			var serializer = new XmlSerializer(typeof(Azureoid.DomainObjects.StorageKeys.StorageService));
+			var httpResponse = PerformHttpCall(subscriptionId, requestUri);
+			var serializer = new XmlSerializer(typeof(DomainObjects.StorageKeys.StorageService));
 			using (var memStream = new MemoryStream(Encoding.UTF8.GetBytes(httpResponse)))
 			{
 				//TODO: Automatically serialized files using XSD.EXE have a tendency to be too long
 				//Also, there's unnecessary/verbose/repetitive code, and we need to add additional namespace
 				//just to prevent name clashes with the partial classes
-				service = (Azureoid.DomainObjects.StorageKeys.StorageService)serializer.Deserialize(memStream);
+				service = (DomainObjects.StorageKeys.StorageService)serializer.Deserialize(memStream);
 			}
 			
 			//Serialize and return response

@@ -32,7 +32,7 @@ namespace Azureoid
 		
 		public static Java.Lang.Object ToJavaObject<TObject>(this TObject value)
 		{
-			if(value == null)
+			if(value.Equals(null))
 				return null;
 			
 			var holder = new JavaHolder(value);					
