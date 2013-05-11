@@ -1,10 +1,24 @@
 ﻿<Properties GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Azureoid.App\MainActivity.cs">
+    <Files>
+      <File FileName="Azureoid.App\MainActivity.cs" Line="50" Column="68" />
+      <File FileName="Azureoid.Core\AzureHelper.cs" Line="161" Column="86" />
+      <File FileName="Azureoid.Core\Common\AssetManagement.cs" Line="9" Column="31" />
+      <File FileName="Azureoid.Core\Common\JavaConversions.cs" Line="2" Column="17" />
+      <File FileName="Azureoid.App\ListAdapters\StorageServiceListAdapter.cs" Line="7" Column="19" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Azureoid.Core" expanded="True" />
+          <Node name="Azureoid.App" expanded="True" selected="True">
+            <Node name="ListAdapters" expanded="True" />
+            <Node name="Resources" expanded="True" />
+          </Node>
+          <Node name="Azureoid.Core" expanded="True">
+            <Node name="Common" expanded="True" />
+            <Node name="DomainObjects" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>

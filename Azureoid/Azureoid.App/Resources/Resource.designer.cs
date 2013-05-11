@@ -26,6 +26,10 @@ namespace Azureoid
 		
 		public static void UpdateIdValues()
 		{
+			Azureoid.Core.Resource.Drawable.monoandroidsplash = Azureoid.Resource.Drawable.monoandroidsplash;
+			Azureoid.Core.Resource.Layout.monoandroidsplash = Azureoid.Resource.Layout.monoandroidsplash;
+			Azureoid.Core.Resource.String.library_name = Azureoid.Resource.String.library_name;
+			Azureoid.Core.Resource.Style.Mono_Android_Theme_Splash = Azureoid.Resource.Style.Mono_Android_Theme_Splash;
 		}
 		
 		public partial class Attribute
@@ -113,20 +117,23 @@ namespace Azureoid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040003
-			public const int AzureCallButtonText = 2130968579;
-			
-			// aapt resource value: 0x7f040001
-			public const int Hello = 2130968577;
-			
-			// aapt resource value: 0x7f040000
-			public const int app_name = 2130968576;
+			// aapt resource value: 0x7f040004
+			public const int AzureCallButtonText = 2130968580;
 			
 			// aapt resource value: 0x7f040002
-			public const int hereGoesResponseFromAzure = 2130968578;
+			public const int Hello = 2130968578;
 			
-			// aapt resource value: 0x7f040004
-			public const int mainScreenTitle = 2130968580;
+			// aapt resource value: 0x7f040001
+			public const int app_name = 2130968577;
+			
+			// aapt resource value: 0x7f040003
+			public const int hereGoesResponseFromAzure = 2130968579;
+			
+			// aapt resource value: 0x7f040000
+			public const int library_name = 2130968576;
+			
+			// aapt resource value: 0x7f040005
+			public const int mainScreenTitle = 2130968581;
 			
 			static String()
 			{

@@ -1,6 +1,6 @@
 using System;
 
-namespace Azureoid.DomainObjects.StorageKeys
+namespace Azureoid.Core.DomainObjects.StorageKeys
 {
 	/// <remarks/>
 	[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.17929")]

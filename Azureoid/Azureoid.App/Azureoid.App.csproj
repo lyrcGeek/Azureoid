@@ -16,6 +16,7 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AssemblyName>Azureoid</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,19 +52,13 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AzureHelper.cs" />
-    <Compile Include="DomainObjects\StorageServices.cs" />
-    <Compile Include="DomainObjects\HostedServices.cs" />
     <Compile Include="ListAdapters\HostedServicesListAdapter.cs" />
     <Compile Include="ListAdapters\StorageServiceListAdapter.cs" />
-    <Compile Include="Common\AssetManagement.cs" />
-    <Compile Include="Common\JavaConversions.cs" />
-    <Compile Include="DomainObjects\StorageServiceDetail.cs" />
-    <Compile Include="DomainObjects\StorageKeys.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -73,4 +68,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Azureoid.Core\Azureoid.Core.csproj">
+      <Project>{8659359B-BD4E-4E72-845D-1412A2240858}</Project>
+      <Name>Azureoid.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

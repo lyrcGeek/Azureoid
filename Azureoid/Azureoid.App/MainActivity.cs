@@ -8,6 +8,11 @@ using Android.OS;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
+using Azureoid.Core.Common;
+using Azureoid.Core;
+
+//TODO: Find a better way to serialize these objects or 
+using StorageKeys = Azureoid.Core.DomainObjects.StorageKeys;
 
 namespace Azureoid
 {
@@ -44,7 +49,7 @@ namespace Azureoid
                     var list = listSender as ListView;
                     var item = services.StorageService[e.Position];
 
-                    var storageAccount = AzureHelper.GetStorageAccountKeys(id, item.ServiceName) as DomainObjects.StorageKeys.StorageService;
+                    var storageAccount = AzureHelper.GetStorageAccountKeys(id, item.ServiceName) as StorageKeys.StorageService;
 
                     Toast.MakeText(this, storageAccount.StorageServiceKeys.Primary,
                                                   ToastLength.Short).Show();

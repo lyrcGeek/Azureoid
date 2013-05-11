@@ -6,7 +6,7 @@ using System.Text;
 using System.Xml.Linq;
 using Android.Content.Res;
 
-namespace Azureoid
+namespace Azureoid.Core.Common
 {
     public class AssetManagement
     {

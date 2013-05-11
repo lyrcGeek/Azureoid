@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using Android.Widget;
 using Android.App;
+using Azureoid.Core.DomainObjects;
 
 namespace Azureoid
 {

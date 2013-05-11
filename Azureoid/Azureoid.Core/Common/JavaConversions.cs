@@ -1,11 +1,8 @@
 using System;
+using Java.Lang;
 
-namespace Azureoid
+namespace Azureoid.Core.Common
 {
-	using System;
-	
-	using Java.Lang;
-	
 	internal class JavaHolder : Java.Lang.Object
 	{
 		public readonly object Instance;
@@ -15,9 +12,19 @@ namespace Azureoid
 			this.Instance = instance;
 		}
 	}	
-	
+
+	/// <summary>
+	/// ObjectExtensions is a class that hosts extensions to convert
+	/// native java objects to CLR and vice-versa
+	/// </summary>
 	public static class ObjectExtension
 	{
+		/// <summary>
+		/// Converts a java (java.lang.object) to a .net (system.object)
+		/// </summary>
+		/// <returns>The net object.</returns>
+		/// <param name="value">Object Value</param>
+		/// <typeparam name="TObject">The object to apply the extension to</typeparam>
 		public static TObject ToNetObject<TObject>(this Java.Lang.Object value)
 		{
 			if(value == null)
@@ -29,7 +36,13 @@ namespace Azureoid
 			return 
 				(TObject)((JavaHolder)value).Instance;
 		}
-		
+
+		/// <summary>
+		/// Converts a .net (system.object) to a java (java.lang.object)
+		/// </summary>
+		/// <returns>The java object.</returns>
+		/// <param name="value">Object Value</param>
+		/// <typeparam name="TObject">The object to apply the extension to</typeparam>
 		public static Java.Lang.Object ToJavaObject<TObject>(this TObject value)
 		{
 			if(value.Equals(null))

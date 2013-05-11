@@ -10,8 +10,10 @@ using Android.OS;
 using Android.App;
 using System.Xml.Serialization;
 using System.Dynamic;
+using Azureoid.Core.DomainObjects;
+using Azureoid.Core.Common;
 
-namespace Azureoid
+namespace Azureoid.Core
 {
     public class AzureHelper
     {
@@ -105,7 +107,7 @@ namespace Azureoid
 		/// <param name="subscriptionId">Subscription identifier.</param>
 		public static StorageServices GetStorageAccounts(string subscriptionId)
 		{
-			StorageServices services;
+			DomainObjects.StorageServices services;
 
 			// Create the request.
 			var requestUri = new Uri("https://management.core.windows.net/"
@@ -156,7 +158,9 @@ namespace Azureoid
 		/// <param name="subscriptionId">Subscription identifier.</param>
 		public static dynamic GetStorageAccountKeys(string subscriptionId, string storageName)
 		{
-			Azureoid.DomainObjects.StorageKeys.StorageService service;
+			//TODO: this shouldnt return a dynamic, but a concrete object (it was just a test)
+
+			Azureoid.Core.DomainObjects.StorageKeys.StorageService service;
 
 			//TODO: This call is exactly like the one before. Find a pattern and reduce boilerplate
 			var requestUri = new Uri("https://management.core.windows.net/"
