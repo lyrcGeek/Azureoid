@@ -1,11 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azureoid", "Azureoid.csproj", "{E1D2161B-9E13-4F62-8513-77A4716BBFC5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azureoid.Core", "Azureoid.Core\Azureoid.Core.csproj", "{8659359B-BD4E-4E72-845D-1412A2240858}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azureoid.App", "Azureoid.App\Azureoid.App.csproj", "{D547CE56-EF3D-4574-B01A-1EEA69280099}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,16 +13,8 @@ Global
 		{8659359B-BD4E-4E72-845D-1412A2240858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8659359B-BD4E-4E72-845D-1412A2240858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8659359B-BD4E-4E72-845D-1412A2240858}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D547CE56-EF3D-4574-B01A-1EEA69280099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D547CE56-EF3D-4574-B01A-1EEA69280099}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D547CE56-EF3D-4574-B01A-1EEA69280099}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D547CE56-EF3D-4574-B01A-1EEA69280099}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E1D2161B-9E13-4F62-8513-77A4716BBFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1D2161B-9E13-4F62-8513-77A4716BBFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1D2161B-9E13-4F62-8513-77A4716BBFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1D2161B-9E13-4F62-8513-77A4716BBFC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Azureoid.csproj
+		StartupItem = Azureoid.Core\Azureoid.Core.csproj
 	EndGlobalSection
 EndGlobal
