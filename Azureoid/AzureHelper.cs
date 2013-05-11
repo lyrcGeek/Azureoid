@@ -13,9 +13,6 @@ using System.Dynamic;
 
 namespace Azureoid
 {
-	//TODO: Instead of passing the certificate to all calls, find a way to define it once on the AzureHelperclass
-	//Or simply implement the certificate on the certificate store and retrieve it on each method
-
     public class AzureHelper
     {
 		/// <summary>
