@@ -16,7 +16,7 @@ using StorageKeys = Azureoid.Core.DomainObjects.StorageKeys;
 
 namespace Azureoid
 {
-    [Activity(Label = "Azureoid", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Azureoid", MainLauncher = true, Icon = "@drawable/Azureoid")]
     public class Activity1 : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -24,9 +24,10 @@ namespace Azureoid
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView(Resource.Layout.Main);
+            SetContentView(Resource.Layout.MainMenu);
 
-            
+			var list = FindViewById<ListView> (Resource.Id.listView1);
+
         }
 
 

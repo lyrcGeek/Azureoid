@@ -45,10 +45,16 @@ namespace Azureoid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int Azureoid = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
+			public const int camera = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int monoandroidsplash = 2130837507;
 			
 			static Drawable()
 			{
@@ -66,14 +72,23 @@ namespace Azureoid
 			// aapt resource value: 0x7f060001
 			public const int AzureCall = 2131099649;
 			
-			// aapt resource value: 0x7f060004
-			public const int LocationName = 2131099652;
+			// aapt resource value: 0x7f060007
+			public const int LocationName = 2131099655;
 			
 			// aapt resource value: 0x7f060002
 			public const int StorageAccountList = 2131099650;
 			
+			// aapt resource value: 0x7f060006
+			public const int StorageName = 2131099654;
+			
+			// aapt resource value: 0x7f060005
+			public const int imageView1 = 2131099653;
+			
+			// aapt resource value: 0x7f060004
+			public const int listView1 = 2131099652;
+			
 			// aapt resource value: 0x7f060003
-			public const int StorageName = 2131099651;
+			public const int textView1 = 2131099651;
 			
 			// aapt resource value: 0x7f060000
 			public const int textView2 = 2131099648;
@@ -95,10 +110,13 @@ namespace Azureoid
 			public const int Main = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int monoandroidsplash = 2130903041;
+			public const int MainMenu = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int StorageServiceListItem = 2130903042;
+			public const int monoandroidsplash = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int StorageServiceListItem = 2130903043;
 			
 			static Layout()
 			{
@@ -118,6 +136,9 @@ namespace Azureoid
 			
 			// aapt resource value: 0x7f040002
 			public const int Hello = 2130968578;
+			
+			// aapt resource value: 0x7f040006
+			public const int MainMenuText = 2130968582;
 			
 			// aapt resource value: 0x7f040001
 			public const int app_name = 2130968577;
