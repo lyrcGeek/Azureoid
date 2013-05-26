@@ -40,25 +40,15 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="Mono.Android" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Mono.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="AzureHelper.cs" />
     <Compile Include="DomainObjects\StorageServices.cs" />
     <Compile Include="DomainObjects\HostedServices.cs" />
     <Compile Include="DomainObjects\StorageServiceDetail.cs" />
     <Compile Include="DomainObjects\StorageKeys.cs" />
     <Compile Include="Common\AssetManagement.cs" />
-    <Compile Include="Common\JavaConversions.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AboutResources.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

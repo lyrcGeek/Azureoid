@@ -4,7 +4,6 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Xml.Linq;
-using Android.Content.Res;
 
 namespace Azureoid.Core.Common
 {

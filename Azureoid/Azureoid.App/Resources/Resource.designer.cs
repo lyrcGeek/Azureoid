@@ -26,10 +26,6 @@ namespace Azureoid
 		
 		public static void UpdateIdValues()
 		{
-			Azureoid.Core.Resource.Drawable.monoandroidsplash = Azureoid.Resource.Drawable.monoandroidsplash;
-			Azureoid.Core.Resource.Layout.monoandroidsplash = Azureoid.Resource.Layout.monoandroidsplash;
-			Azureoid.Core.Resource.String.library_name = Azureoid.Resource.String.library_name;
-			Azureoid.Core.Resource.Style.Mono_Android_Theme_Splash = Azureoid.Resource.Style.Mono_Android_Theme_Splash;
 		}
 		
 		public partial class Attribute

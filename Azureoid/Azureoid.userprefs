@@ -1,23 +1,26 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Azureoid.App\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Azureoid.App\ListAdapters\StorageServiceListAdapter.cs">
     <Files>
-      <File FileName="Azureoid.App\MainActivity.cs" Line="50" Column="68" />
-      <File FileName="Azureoid.Core\AzureHelper.cs" Line="161" Column="86" />
-      <File FileName="Azureoid.Core\Common\AssetManagement.cs" Line="9" Column="31" />
-      <File FileName="Azureoid.Core\Common\JavaConversions.cs" Line="2" Column="17" />
-      <File FileName="Azureoid.App\ListAdapters\StorageServiceListAdapter.cs" Line="7" Column="19" />
+      <File FileName="Azureoid.App\MainActivity.cs" Line="7" Column="18" />
+      <File FileName="Azureoid.Core\AzureHelper.cs" Line="98" Column="66" />
+      <File FileName="Azureoid.App\ListAdapters\StorageServiceListAdapter.cs" Line="46" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Azureoid.App" expanded="True" selected="True">
-            <Node name="ListAdapters" expanded="True" />
-            <Node name="Resources" expanded="True" />
+          <Node name="Azureoid.App" expanded="True">
+            <Node name="Assets" expanded="True" />
+            <Node name="ListAdapters" expanded="True">
+              <Node name="StorageServiceListAdapter.cs" selected="True" />
+            </Node>
+            <Node name="Resources" expanded="True">
+              <Node name="layout" expanded="True" />
+            </Node>
           </Node>
           <Node name="Azureoid.Core" expanded="True">
-            <Node name="Common" expanded="True" />
             <Node name="DomainObjects" expanded="True" />
+            <Node name="Resources" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -29,4 +32,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Azureoid.App MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" MonoForAntroid.PreferredTheme="Theme.Holo.Light" AndroidDeviceId-Debug="emulator-5554" />
 </Properties>

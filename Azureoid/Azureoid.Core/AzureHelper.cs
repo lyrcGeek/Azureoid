@@ -6,8 +6,6 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Linq;
 using System.Xml.Linq;
-using Android.OS;
-using Android.App;
 using System.Xml.Serialization;
 using System.Dynamic;
 using Azureoid.Core.DomainObjects;
