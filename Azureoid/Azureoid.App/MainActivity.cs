@@ -26,7 +26,20 @@ namespace Azureoid
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.MainMenu);
 
-			var list = FindViewById<ListView> (Resource.Id.listView1);
+			var list = FindViewById<ListView> (Resource.Id.ServiceList);
+			var services = new List<MainMenuItemViewModel> {
+				new MainMenuItemViewModel {Title = "Websites", ImageResouceId = Resource.Drawable.IconWebsites, ItemCount = 2},
+				new MainMenuItemViewModel {Title = "Virtual Machines", ImageResouceId = Resource.Drawable.IconVirtualMachine},
+				new MainMenuItemViewModel {Title = "Mobile Services", ImageResouceId = Resource.Drawable.IconMobileServices},
+				new MainMenuItemViewModel {Title = "Cloud Services", ImageResouceId = Resource.Drawable.IconCloudServices},
+				new MainMenuItemViewModel {Title = "SQL Azure", ImageResouceId = Resource.Drawable.IconSql},
+				new MainMenuItemViewModel {Title = "Storage", ImageResouceId = Resource.Drawable.IconStorage},
+				new MainMenuItemViewModel {Title = "Network", ImageResouceId = Resource.Drawable.IconNetwork},
+				new MainMenuItemViewModel {Title = "Media Services", ImageResouceId = Resource.Drawable.IconMediaServices},
+				new MainMenuItemViewModel {Title = "Settings", ImageResouceId = Resource.Drawable.IconSettings}
+			};
+
+			list.Adapter = new MainMenuListAdapter (this, services);
 
         }
 

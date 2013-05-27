@@ -48,13 +48,43 @@ namespace Azureoid
 			public const int Azureoid = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int camera = 2130837505;
+			public const int Icon = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Icon = 2130837506;
+			public const int IconAddOns = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int monoandroidsplash = 2130837507;
+			public const int IconCloudServices = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int IconMediaServices = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int IconMobileServices = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int IconNetwork = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int IconReporting = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int IconSettings = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int IconSql = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int IconStorage = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int IconVirtualMachine = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int IconWebsites = 2130837516;
+			
+			// aapt resource value: 0x7f02000d
+			public const int monoandroidsplash = 2130837517;
 			
 			static Drawable()
 			{
@@ -72,23 +102,26 @@ namespace Azureoid
 			// aapt resource value: 0x7f060001
 			public const int AzureCall = 2131099649;
 			
-			// aapt resource value: 0x7f060007
-			public const int LocationName = 2131099655;
+			// aapt resource value: 0x7f060006
+			public const int ItemCount = 2131099654;
+			
+			// aapt resource value: 0x7f060004
+			public const int ItemImage = 2131099652;
+			
+			// aapt resource value: 0x7f060005
+			public const int ItemTitle = 2131099653;
+			
+			// aapt resource value: 0x7f060008
+			public const int LocationName = 2131099656;
+			
+			// aapt resource value: 0x7f060003
+			public const int ServiceList = 2131099651;
 			
 			// aapt resource value: 0x7f060002
 			public const int StorageAccountList = 2131099650;
 			
-			// aapt resource value: 0x7f060006
-			public const int StorageName = 2131099654;
-			
-			// aapt resource value: 0x7f060005
-			public const int imageView1 = 2131099653;
-			
-			// aapt resource value: 0x7f060004
-			public const int listView1 = 2131099652;
-			
-			// aapt resource value: 0x7f060003
-			public const int textView1 = 2131099651;
+			// aapt resource value: 0x7f060007
+			public const int StorageName = 2131099655;
 			
 			// aapt resource value: 0x7f060000
 			public const int textView2 = 2131099648;
@@ -113,10 +146,13 @@ namespace Azureoid
 			public const int MainMenu = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int monoandroidsplash = 2130903042;
+			public const int MainMenuListItem = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int StorageServiceListItem = 2130903043;
+			public const int monoandroidsplash = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int StorageServiceListItem = 2130903044;
 			
 			static Layout()
 			{

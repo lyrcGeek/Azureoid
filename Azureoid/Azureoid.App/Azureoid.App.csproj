@@ -55,6 +55,8 @@
     <Compile Include="ListAdapters\HostedServicesListAdapter.cs" />
     <Compile Include="ListAdapters\StorageServiceListAdapter.cs" />
     <Compile Include="StorageServiceController.cs" />
+    <Compile Include="ListAdapters\MainMenuListAdapter.cs" />
+    <Compile Include="ViewModels\MainMenuItemViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -64,11 +66,22 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
-    <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\StorageServiceListItem.axml" />
     <AndroidResource Include="Resources\layout\MainMenu.axml" />
-    <AndroidResource Include="Resources\drawable\camera.png" />
     <AndroidResource Include="Resources\drawable\Azureoid.png" />
+    <AndroidResource Include="Resources\layout\MainMenuListItem.axml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\IconAddOns.png" />
+    <AndroidResource Include="Resources\drawable\IconCloudServices.png" />
+    <AndroidResource Include="Resources\drawable\IconMediaServices.png" />
+    <AndroidResource Include="Resources\drawable\IconMobileServices.png" />
+    <AndroidResource Include="Resources\drawable\IconNetwork.png" />
+    <AndroidResource Include="Resources\drawable\IconReporting.png" />
+    <AndroidResource Include="Resources\drawable\IconSettings.png" />
+    <AndroidResource Include="Resources\drawable\IconWebsites.png" />
+    <AndroidResource Include="Resources\drawable\IconVirtualMachine.png" />
+    <AndroidResource Include="Resources\drawable\IconSql.png" />
+    <AndroidResource Include="Resources\drawable\IconStorage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup />
@@ -77,5 +90,8 @@
       <Project>{8659359B-BD4E-4E72-845D-1412A2240858}</Project>
       <Name>Azureoid.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

@@ -1,28 +1,23 @@
 ﻿<Properties GitUserInfo="UsingMD">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Azureoid.App\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Azureoid.App\MainActivity.cs" Line="19" Column="82" />
-      <File FileName="Azureoid.Core\AzureHelper.cs" Line="17" Column="6" />
-      <File FileName="Azureoid.App\ListAdapters\StorageServiceListAdapter.cs" Line="49" Column="5" />
+      <File FileName="Azureoid.App\MainActivity.cs" Line="24" Column="35" />
+      <File FileName="Azureoid.Core\AzureHelper.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Azureoid.App" expanded="True">
-            <Node name="Assets" expanded="True" />
-            <Node name="ListAdapters" expanded="True" />
+          <Node name="Azureoid.App" expanded="True" selected="True">
             <Node name="Resources" expanded="True">
-              <Node name="drawable" expanded="True" selected="True" />
               <Node name="layout" expanded="True" />
               <Node name="values" expanded="True" />
             </Node>
+            <Node name="ViewModels" expanded="True" />
           </Node>
           <Node name="Azureoid.Core" expanded="True">
-            <Node name="References" expanded="True" />
             <Node name="Common" expanded="True" />
             <Node name="DomainObjects" expanded="True" />
-            <Node name="Resources" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -34,5 +29,5 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Azureoid.App MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" MonoForAntroid.PreferredTheme="Theme.Holo.Light" />
+  <MonoDevelop.Ide.ItemProperties.Azureoid.App MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" MonoForAntroid.PreferredTheme="Theme.Black.NoTitleBar.Fullscreen" AndroidDeviceId-Debug="emulator-5554" />
 </Properties>
